@@ -2,7 +2,7 @@ mqtt:
   number:
     - name: "Heizkreis 1 Pumpe"
       unique_id: open3e_Heizkreis1_Pumpe
-      object_id: open3e_hk1pumpe
+      default_entity_id: sensor.open3e_hk1pumpe
       device:
         name: "Open3e_Vitocal250A"
         identifiers: !secret vitocal_sn
@@ -28,7 +28,7 @@ mqtt:
 
     - name: "Heizkreis 1 Vorlauftemperatur Minimal"
       unique_id: open3e_Heizkreis1_Vorlauf_Minimal
-      object_id: open3e_hk1vorlaufminimal
+      default_entity_id: sensor.open3e_hk1vorlaufminimal
       device:
         name: "Open3e_Vitocal250A"
         identifiers: !secret vitocal_sn
@@ -52,7 +52,7 @@ mqtt:
 
     - name: "Heizkreis 1 Vorlauftemperatur Maximal"
       unique_id: open3e_Heizkreis1_Vorlauf_Maximal
-      object_id: open3e_hk1vorlaufmaximal
+      default_entity_id: sensor.open3e_hk1vorlaufmaximal
       device:
         name: "Open3e_Vitocal250A"
         identifiers: !secret vitocal_sn
@@ -76,7 +76,7 @@ mqtt:
 
     - name: "Heizkreis 2 Pumpe"
       unique_id: open3e_Heizkreis2_Pumpe
-      object_id: open3e_hk2pumpe
+      default_entity_id: sensor.open3e_hk2pumpe
       device:
         name: "Open3e_Vitocal250A"
         identifiers: !secret vitocal_sn
@@ -102,7 +102,7 @@ mqtt:
 
     - name: "Max. Leistung elektrische Zusatzheizung"
       unique_id: 680_2626_open3e_MaximumPowerElectricalHeater
-      object_id: 2626_maximumpowerelectricalheater
+      default_entity_id: sensor.2626_maximumpowerelectricalheater
       device:
         name: "Open3e_Vitocal250A"
         identifiers: !secret vitocal_sn
@@ -235,7 +235,7 @@ mqtt:
     - name: "Vitocal Wärmepumpe Frostschutz"
       state_topic: "open3e/6CF_2442_HeatPumpFrostProtection"
       unique_id: 6CF_2442_HeatPumpFrostProtection
-      object_id: 2442_HeatPumpFrostProtection
+      default_entity_id: sensor.2442_HeatPumpFrostProtection
       device:
         name: "Open3e_Vitocal250A"
         identifiers: !secret vitocal_sn
@@ -250,7 +250,7 @@ mqtt:
     - name: "Vitocal HK1 Frostschutz"
       state_topic: "open3e/680_2855_MixerOneCircuitFrostProtectionConfiguration"
       unique_id: 680_2855_MixerOneCircuitFrostProtectionConfiguration
-      object_id: 2855_MixerOneCircuitFrostProtectionConfiguration
+      default_entity_id: sensor.2855_MixerOneCircuitFrostProtectionConfiguration
       device:
         name: "Open3e_Vitocal250A"
         identifiers: !secret vitocal_sn
@@ -263,7 +263,7 @@ mqtt:
     - name: "Vitocal HK1 Status Pumpe"
       state_topic: "open3e/680_401_MixerOneCircuitPump"
       unique_id: 680_401_MixerOneCircuitPump
-      object_id: 401_MixerOneCircuitPump
+      default_entity_id: sensor.401_MixerOneCircuitPump
       device:
         name: "Open3e_Vitocal250A"
         identifiers: !secret vitocal_sn
@@ -277,7 +277,7 @@ mqtt:
     - name: "Vitocal HK2 Frostschutz"
       state_topic: "open3e/680_2856_MixerTwoCircuitFrostProtectionConfiguration"
       unique_id: 680_2856_MixerTwoCircuitFrostProtectionConfiguration
-      object_id: 2856_MixerTwoCircuitFrostProtectionConfiguration
+      default_entity_id: sensor.2856_MixerTwoCircuitFrostProtectionConfiguration
       device:
         name: "Open3e_Vitocal250A"
         identifiers: !secret vitocal_sn
@@ -290,7 +290,7 @@ mqtt:
     - name: "Vitocal HK2 Status Pumpe"
       state_topic: "open3e/680_402_MixerTwoCircuitPump"
       unique_id: 680_402_MixerTwoCircuitPump
-      object_id: 402_MixerTwoCircuitPump
+      default_entity_id: sensor.402_MixerTwoCircuitPump
       device:
         name: "Open3e_Vitocal250A"
         identifiers: !secret vitocal_sn
@@ -304,7 +304,7 @@ mqtt:
     - name: "Vitocal Kompressor Status"
       state_topic: "open3e/680_2351_HeatPumpCompressor"
       unique_id: 680_2351_HeatPumpCompressor
-      object_id: 2351_heatpumpcompressor
+      default_entity_id: sensor.2351_heatpumpcompressor
       device:
         name: "Open3e_Vitocal250A"
         identifiers: !secret vitocal_sn
@@ -318,7 +318,7 @@ mqtt:
     - name: "Vitocal Zusatzheizung Status"
       state_topic: "open3e/680_2352_AdditionalElectricHeater"
       unique_id: 680_2352_AdditionalElectricHeater
-      object_id: 2352_additionalelectricheater
+      default_entity_id: sensor.2352_additionalelectricheater
       device:
         name: "Open3e_Vitocal250A"
         identifiers: !secret vitocal_sn
@@ -333,7 +333,7 @@ mqtt:
     - name: "Vitocal Vorlauftemperatur Istwert"
       state_topic: "open3e/680_268_FlowTemperatureSensor/Actual"
       unique_id: 680_268_FlowTemperatureSensor
-      object_id: 268_flowtemperaturesensor
+      default_entity_id: sensor.268_flowtemperaturesensor
       device:
         name: "Open3e_Vitocal250A"
         identifiers: !secret vitocal_sn
@@ -348,7 +348,7 @@ mqtt:
     - name: "Vitocal Rücklauftemperatur"
       state_topic: "open3e/680_269_ReturnTemperatureSensor/Actual"
       unique_id: 680_269_ReturnTemperatureSensor
-      object_id: 269_returntemperaturesensor
+      default_entity_id: sensor.269_returntemperaturesensor
       device:
         name: "Open3e_Vitocal250A"
         identifiers: !secret vitocal_sn
@@ -362,7 +362,7 @@ mqtt:
     - name: "Vitocal Außentemperatur"
       state_topic: "open3e/680_274_OutsideTemperatureSensor/Actual"
       unique_id: 680_274_OutsideTemperatureSensor
-      object_id: 274_outsidetemperaturesensor
+      default_entity_id: sensor.274_outsidetemperaturesensor
       device:
         name: "Open3e_Vitocal250A"
         identifiers: !secret vitocal_sn
@@ -376,7 +376,7 @@ mqtt:
     - name: "Vitocal Wasserdruck"
       state_topic: "open3e/680_318_WaterPressureSensor/Actual"
       unique_id: 680_318_WaterPressureSensor
-      object_id: 318_waterpressuresensor
+      default_entity_id: sensor.318_waterpressuresensor
       device:
         name: "Open3e_Vitocal250A"
         identifiers: !secret vitocal_sn
@@ -390,7 +390,7 @@ mqtt:
     - name: "Vitocal Primärer Wärmetauscher Temperatur"
       state_topic: "open3e/680_320_PrimaryHeatExchangerLiquidTemperatureSensor/Actual"
       unique_id: 680_320_PrimaryHeatExchangerLiquidTemperatureSensor
-      object_id: 320_primaryheatexchangerliquidtemperaturesensor
+      default_entity_id: sensor.320_primaryheatexchangerliquidtemperaturesensor
       device:
         name: "Open3e_Vitocal250A"
         identifiers: !secret vitocal_sn
@@ -404,7 +404,7 @@ mqtt:
     - name: "Vitocal Sekundärer Wärmetauscher Temperatur"
       state_topic: "open3e/680_355_SecondaryHeatExchangerLiquidTemperatureSensor/Actual"
       unique_id: 680_355_SecondaryHeatExchangerLiquidTemperatureSensor
-      object_id: 355_secondaryheatexchangerliquidtemperaturesensor
+      default_entity_id: sensor.355_secondaryheatexchangerliquidtemperaturesensor
       device:
         name: "Open3e_Vitocal250A"
         identifiers: !secret vitocal_sn
@@ -418,7 +418,7 @@ mqtt:
     - name: "Vitocal Primärpumpe Drehzahl Prozent"
       state_topic: "open3e/680_381_CentralHeatingPump"
       unique_id: 680_381_CentralHeatingPump
-      object_id: 381_centralheatingpump
+      default_entity_id: sensor.381_centralheatingpump
       device:
         name: "Open3e_Vitocal250A"
         identifiers: !secret vitocal_sn
@@ -432,7 +432,7 @@ mqtt:
     - name: "Vitocal Primärpumpe Status"
       state_topic: "open3e/680_2791_CentralHeatingPumpStatus"
       unique_id: 680_2791_CentralHeatingPumpStatus
-      object_id: 2791_centralheatingpumpstatus
+      default_entity_id: sensor.2791_centralheatingpumpstatus
       device:
         name: "Open3e_Vitocal250A"
         identifiers: !secret vitocal_sn
@@ -446,7 +446,7 @@ mqtt:
     - name: "Vitocal Position Erweiterungsventil 1"
       state_topic: "open3e/680_389_ElectronicExpansionValveOneCurrentPositionPercent"
       unique_id: 680_389_ElectronicExpansionValveOneCurrentPositionPercent
-      object_id: 389_electronicexpansionvalveonecurrentpositionpercent
+      default_entity_id: sensor.389_electronicexpansionvalveonecurrentpositionpercent
       device:
         name: "Open3e_Vitocal250A"
         identifiers: !secret vitocal_sn
@@ -459,7 +459,7 @@ mqtt:
     - name: "Vitocal Position Erweiterungsventil 2"
       state_topic: "open3e/680_391_ElectronicExpansionValveTwoCurrentPositionPercent"
       unique_id: 680_391_ElectronicExpansionValveTwoCurrentPositionPercent
-      object_id: 391_electronicexpansionvalvetwocurrentpositionpercent
+      default_entity_id: sensor.391_electronicexpansionvalvetwocurrentpositionpercent
       device:
         name: "Open3e_Vitocal250A"
         identifiers: !secret vitocal_sn
@@ -472,7 +472,7 @@ mqtt:
     - name: "Vitocal Wartungsmeldungen"
       state_topic: "open3e/680_901_ServiceManagerIsRequired"
       unique_id: 680_901_ServiceManagerIsRequired
-      object_id: 901_servicemanagerisrequired
+      default_entity_id: sensor.901_servicemanagerisrequired
       device:
         name: "Open3e_Vitocal250A"
         identifiers: !secret vitocal_sn
@@ -483,7 +483,7 @@ mqtt:
     - name: "Vitocal Störungsmeldungen"
       state_topic: "open3e/680_902_MalfunctionIdentification"
       unique_id: 680_902_MalfunctionIdentification
-      object_id: 902_malfunctionidentification
+      default_entity_id: sensor.902_malfunctionidentification
       device:
         name: "Open3e_Vitocal250A"
         identifiers: !secret vitocal_sn
@@ -494,7 +494,7 @@ mqtt:
     - name: "Vitocal Durchflusssensor"
       state_topic: "open3e/680_1043_AllengraSensor/Actual"
       unique_id: 680_1043_AllengraSensor
-      object_id: 1043_allengrasensor
+      default_entity_id: sensor.1043_allengrasensor
       device:
         name: "Open3e_Vitocal250A"
         identifiers: !secret vitocal_sn
@@ -507,7 +507,7 @@ mqtt:
     - name: "Vitocal Primäre Einlauftemperatur"
       state_topic: "open3e/680_1769_PrimaryInletTemperatureSensor/Actual"
       unique_id: 680_1769_PrimaryInletTemperatureSensor
-      object_id: 1769_primaryinlettemperaturesensor
+      default_entity_id: sensor.1769_primaryinlettemperaturesensor
       device:
         name: "Open3e_Vitocal250A"
         identifiers: !secret vitocal_sn
@@ -521,7 +521,7 @@ mqtt:
     - name: "Vitocal Secondärkreislauf Vorlauf Temperatur"
       state_topic: "open3e/680_1770_SecondaryOutletTemperatureSensor/Actual"
       unique_id: 680_1770_SecondaryOutletTemperatureSensor
-      object_id: 1770_secondaryoutlettemperaturesensor
+      default_entity_id: sensor.1770_secondaryoutlettemperaturesensor
       device:
         name: "Open3e_Vitocal250A"
         identifiers: !secret vitocal_sn
@@ -535,7 +535,7 @@ mqtt:
     - name: "Vitocal Heizungsraum Temperatur"
       state_topic: "open3e/680_1771_EngineRoomTemperatureSensor/Actual"
       unique_id: 680_1771_EngineRoomTemperatureSensor
-      object_id: 1771_engineroomtemperaturesensor
+      default_entity_id: sensor.1771_engineroomtemperaturesensor
       device:
         name: "Open3e_Vitocal250A"
         identifiers: !secret vitocal_sn
@@ -549,7 +549,7 @@ mqtt:
     - name: "Vitocal Primärkreislauf Lüfter 1"
       state_topic: "open3e/680_1775_PrimaryCircuitFanOne"
       unique_id: 680_1775_PrimaryCircuitFanOne
-      object_id: 1775_primarycircuitfanone
+      default_entity_id: sensor.1775_primarycircuitfanone
       device:
         name: "Open3e_Vitocal250A"
         identifiers: !secret vitocal_sn
@@ -562,7 +562,7 @@ mqtt:
     - name: "Vitocal Primärkreislauf Lüfter 2"
       state_topic: "open3e/680_1776_PrimaryCircuitFanTwo"
       unique_id: 680_1776_PrimaryCircuitFanTwo
-      object_id: 1776_primarycircuitfantwo
+      default_entity_id: sensor.1776_primarycircuitfantwo
       device:
         name: "Open3e_Vitocal250A"
         identifiers: !secret vitocal_sn
@@ -575,7 +575,7 @@ mqtt:
     - name: "Vitocal Verflüssiger Temperatur"
       state_topic: "open3e/680_2333_EconomizerLiquidTemperatureSensor/Actual"
       unique_id: 680_2333_EconomizerLiquidTemperatureSensor
-      object_id: 2333_economizerliquidtemperaturesensor
+      default_entity_id: sensor.2333_economizerliquidtemperaturesensor
       device:
         name: "Open3e_Vitocal250A"
         identifiers: !secret vitocal_sn
@@ -589,7 +589,7 @@ mqtt:
     - name: "Vitocal Smart Grid Betriebszustand"
       state_topic: "open3e/680_2350_EnergyManagmentSystemResultingControlState"
       unique_id: 680_2350_EnergyManagmentSystemResultingControlState
-      object_id: 2350_energymanagmentsystemresultingcontrolstate
+      default_entity_id: sensor.2350_energymanagmentsystemresultingcontrolstate
       device:
         name: "Open3e_Vitocal250A"
         identifiers: !secret vitocal_sn
@@ -613,7 +613,7 @@ mqtt:
     - name: "Vitocal Verdampfer Temperatur"
       state_topic: "open3e/680_2334_EvaporatorVaporTemperatureSensor/Actual"
       unique_id: 680_2334_EvaporatorVaporTemperatureSensor
-      object_id: 2334_evaporatorvaportemperaturesensor
+      default_entity_id: sensor.2334_evaporatorvaportemperaturesensor
       device:
         name: "Open3e_Vitocal250A"
         identifiers: !secret vitocal_sn
@@ -627,7 +627,7 @@ mqtt:
     - name: "Vitocal Leistungsaufnahme Wärmepumpe"
       state_topic: "open3e/680_2488_CurrentElectricalPowerConsumptionSystem"
       unique_id: 680_2488_CurrentElectricalPowerConsumptionSystem
-      object_id: 2488_currentelectricalpowerconsumptionsystem
+      default_entity_id: sensor.2488_currentelectricalpowerconsumptionsystem
       device:
         name: "Open3e_Vitocal250A"
         identifiers: !secret vitocal_sn
@@ -641,7 +641,7 @@ mqtt:
     - name: "Vitocal Thermische Leistung"
       state_topic: "open3e/680_2496_CurrentThermalCapacitySystem"
       unique_id: 680_2496_CurrentThermalCapacitySystem
-      object_id: 2496_currentthermalcapacitysystem
+      default_entity_id: sensor.2496_currentthermalcapacitysystem
       device:
         name: "Open3e_Vitocal250A"
         identifiers: !secret vitocal_sn
@@ -655,7 +655,7 @@ mqtt:
     - name: "Vitocal Heizwasser-Pufferspeicher Temperature"
       state_topic: "open3e/680_3016_HeatingBufferTemperatureSensor/Actual"
       unique_id: 680_3016_vitocal_HeatingBufferTemperatureSensor
-      object_id: 3016_heatingbuffertemperaturesensor
+      default_entity_id: sensor.3016_heatingbuffertemperaturesensor
       device:
         name: "Open3e_Vitocal250A"
         identifiers: !secret vitocal_sn
@@ -669,7 +669,7 @@ mqtt:
     - name: "Vitocal Angeforderte Wärmeleistung Abtauen"
       state_topic: "open3e/680_2256_DesiredThermalEnergyDefrost"
       unique_id: 680_2256_DesiredThermalEnergyDefrost
-      object_id: 2256_desiredthermalenergydefrost
+      default_entity_id: sensor.2256_desiredthermalenergydefrost
       device:
         name: "Open3e_Vitocal250A"
         identifiers: !secret vitocal_sn
@@ -683,7 +683,7 @@ mqtt:
     - name: "Vitocal 4/3-Wege Ventil Position"
       state_topic: "open3e/680_2735_FourThreeWayValveValveCurrentPosition"
       unique_id: 680_2735_FourThreeWayValveValveCurrentPosition
-      object_id: 2735_fourthreewayvalvevalvecurrentposition
+      default_entity_id: sensor.2735_fourthreewayvalvevalvecurrentposition
       device:
         name: "Open3e_Vitocal250A"
         identifiers: !secret vitocal_sn
@@ -697,7 +697,7 @@ mqtt:
     - name: "Vitocal Warmwasser Temperatur"
       state_topic: "open3e/680_271_DomesticHotWaterSensor/Actual"
       unique_id: 680_271_DomesticHotWaterSensor
-      object_id: 271_domestichotwatersensor
+      default_entity_id: sensor.271_domestichotwatersensor
       device:
         name: "Open3e_Vitocal250A"
         identifiers: !secret vitocal_sn
@@ -711,7 +711,7 @@ mqtt:
     - name: "Vitocal Warmwasser Solltemperatur"
       state_topic: "open3e/680_396_DomesticHotWaterTemperatureSetpoint"
       unique_id: 680_396_DomesticHotWaterTemperatureSetpoint
-      object_id: 396_domestichotwatertemperaturesetpoint
+      default_entity_id: sensor.396_domestichotwatertemperaturesetpoint
       device:
         name: "Open3e_Vitocal250A"
         identifiers: !secret vitocal_sn
@@ -726,7 +726,7 @@ mqtt:
     - name: "Vitocal HK1 Vorlauftemperatur Istwert"
       state_topic: "open3e/680_284_MixerOneCircuitFlowTemperatureSensor/Actual"
       unique_id: 680_284_MixerOneCircuitFlowTemperatureSensor
-      object_id: 284_mixeronecircuitflowtemperaturesensor
+      default_entity_id: sensor.284_mixeronecircuitflowtemperaturesensor
       device:
         name: "Open3e_Vitocal250A"
         identifiers: !secret vitocal_sn
@@ -740,7 +740,7 @@ mqtt:
     - name: "Vitocal HK1 Position Mischventil"
       state_topic: "open3e/680_475_MixerOneCircuitThreeWayValvePositionPercent"
       unique_id: 680_475_MixerOneCircuitThreeWayValvePositionPercent
-      object_id: 475_mixeronecircuitthreewayvalvepositionpercent
+      default_entity_id: sensor.475_mixeronecircuitthreewayvalvepositionpercent
       device:
         name: "Open3e_Vitocal250A"
         identifiers: !secret vitocal_sn
@@ -753,7 +753,7 @@ mqtt:
     - name: "Vitocal HK1 Vorlauftemperatur Sollwert"
       state_topic: "open3e/680_987_MixerOneCircuitFlowTemperatureTargetSetpoint"
       unique_id: 680_987_MixerOneCircuitFlowTemperatureTargetSetpoint
-      object_id: 987_mixeronecircuitflowtemperaturetargetsetpoint
+      default_entity_id: sensor.987_mixeronecircuitflowtemperaturetargetsetpoint
       device:
         name: "Open3e_Vitocal250A"
         identifiers: !secret vitocal_sn
@@ -767,7 +767,7 @@ mqtt:
     - name: "Vitocal HK1 Pumpe Minimalbegrenzung"
       state_topic: "open3e/680_1102_MixerOneCircuitPumpMinimumMaximumLimit/MinSpeed"
       unique_id: 680_1102_MixerOneCircuitPumpMinimumMaximumLimit_MinSpeed
-      object_id: 1102_mixeronecircuitpumpminimummaximumlimitminspeed
+      default_entity_id: sensor.1102_mixeronecircuitpumpminimummaximumlimitminspeed
       device:
         name: "Open3e_Vitocal250A"
         identifiers: !secret vitocal_sn
@@ -780,7 +780,7 @@ mqtt:
     - name: "Vitocal HK1 Pumpe Maximalbegrenzung"
       state_topic: "open3e/680_1102_MixerOneCircuitPumpMinimumMaximumLimit/MaxSpeed"
       unique_id: 680_1102_MixerOneCircuitPumpMinimumMaximumLimit_MaxSpeed
-      object_id: 1102_mixeronecircuitpumpminimummaximumlimitmaxspeed
+      default_entity_id: sensor.1102_mixeronecircuitpumpminimummaximumlimitmaxspeed
       device:
         name: "Open3e_Vitocal250A"
         identifiers: !secret vitocal_sn
@@ -793,7 +793,7 @@ mqtt:
     - name: "Vitocal HK1 Pumpe Standardwert"
       state_topic: "open3e/680_1102_MixerOneCircuitPumpMinimumMaximumLimit/Setpoint"
       unique_id: 680_1102_MixerOneCircuitPumpMinimumMaximumLimit_Setpoint
-      object_id: 1102_mixeronecircuitpumpminimummaximumlimitsetpoint
+      default_entity_id: sensor.1102_mixeronecircuitpumpminimummaximumlimitsetpoint
       device:
         name: "Open3e_Vitocal250A"
         identifiers: !secret vitocal_sn
@@ -806,7 +806,7 @@ mqtt:
     - name: "Vitocal HK1 Temperatur Minimum"
       state_topic: "open3e/680_1192_MixerOneCircuitFlowTemperatureMinimumMaximumLimit/Minimum"
       unique_id: 680_1192_MixerOneCircuitFlowTemperature_Minimum
-      object_id: 1192_mixeronecircuitflowtemperature_minimum
+      default_entity_id: sensor.1192_mixeronecircuitflowtemperature_minimum
       device:
         name: "Open3e_Vitocal250A"
         identifiers: !secret vitocal_sn
@@ -819,7 +819,7 @@ mqtt:
     - name: "Vitocal HK1 Temperatur Maximum"
       state_topic: "open3e/680_1192_MixerOneCircuitFlowTemperatureMinimumMaximumLimit/Maximum"
       unique_id: 680_1192_MixerOneCircuitFlowTemperature_Maximum
-      object_id: 1192_mixeronecircuitflowtemperature_maximum
+      default_entity_id: sensor.1192_mixeronecircuitflowtemperature_maximum
       device:
         name: "Open3e_Vitocal250A"
         identifiers: !secret vitocal_sn
@@ -832,7 +832,7 @@ mqtt:
     - name: "Vitocal HK1 Pumpe Status"
       state_topic: "open3e/680_2792_MixerOneCircuitPumpStatus"
       unique_id: 680_2792_MixerOneCircuitPumpStatus
-      object_id: 2792_mixeronecircuitpumpstatus
+      default_entity_id: sensor.2792_mixeronecircuitpumpstatus
       device:
         name: "Open3e_Vitocal250A"
         identifiers: !secret vitocal_sn
@@ -845,7 +845,7 @@ mqtt:
     - name: "Vitocal HK1 Betriebsprogramm"
       state_topic: "open3e/680_1415_MixerOneCircuitOperationState/State/ID"
       unique_id: 680_1415_MixerOneCircuitOperationState
-      object_id: 1415_mixeronecircuitoperationstate
+      default_entity_id: sensor.1415_mixeronecircuitoperationstate
       device:
         name: "Open3e_Vitocal250A"
         identifiers: !secret vitocal_sn
@@ -879,7 +879,7 @@ mqtt:
     - name: "Vitocal HK1 Raumtemperatur Komfort"
       state_topic: "open3e/680_424_MixerOneCircuitRoomTemperatureSetpoint/Comfort"
       unique_id: 680_424_MixerOneCircuitRoomTemperatureSetpoint_Comfort
-      object_id: 424_mixeronecircuitroomtemperaturesetpoint_comfort
+      default_entity_id: sensor.424_mixeronecircuitroomtemperaturesetpoint_comfort
       device:
         name: "Open3e_Vitocal250A"
         identifiers: !secret vitocal_sn
@@ -893,7 +893,7 @@ mqtt:
     - name: "Vitocal HK1 Raumtemperatur Standard"
       state_topic: "open3e/680_424_MixerOneCircuitRoomTemperatureSetpoint/Standard"
       unique_id: 680_424_MixerOneCircuitRoomTemperatureSetpoint_Standard
-      object_id: 424_mixeronecircuitroomtemperaturesetpoint_standard
+      default_entity_id: sensor.424_mixeronecircuitroomtemperaturesetpoint_standard
       device:
         name: "Open3e_Vitocal250A"
         identifiers: !secret vitocal_sn
@@ -907,7 +907,7 @@ mqtt:
     - name: "Vitocal HK1 Raumtemperatur Reduziert"
       state_topic: "open3e/680_424_MixerOneCircuitRoomTemperatureSetpoint/Reduced"
       unique_id: 680_424_MixerOneCircuitRoomTemperatureSetpoint_Reduced
-      object_id: 424_mixeronecircuitroomtemperaturesetpoint_reduced
+      default_entity_id: sensor.424_mixeronecircuitroomtemperaturesetpoint_reduced
       device:
         name: "Open3e_Vitocal250A"
         identifiers: !secret vitocal_sn
@@ -921,7 +921,7 @@ mqtt:
     - name: "Vitocal HK1 aktuelle Raumtemperatur Sollwert"
       state_topic: "open3e/680_1643_MixerOneCircuitCurrentTemperatureSetpoint"
       unique_id: 680_1643_MixerOneCircuitCurrentTemperatureSetpoint
-      object_id: 1643_mixeronecircuitcurrenttemperaturesetpoint
+      default_entity_id: sensor.1643_mixeronecircuitcurrenttemperaturesetpoint
       device:
         name: "Open3e_Vitocal250A"
         identifiers: !secret vitocal_sn
@@ -936,7 +936,7 @@ mqtt:
     - name: "Vitocal HK2 Vorlauftemperatur Istwert"
       state_topic: "open3e/680_286_MixerTwoCircuitFlowTemperatureSensor/Actual"
       unique_id: 680_286_MixerTwoCircuitFlowTemperatureSensor
-      object_id: 286_mixertwocircuitflowtemperaturesensor
+      default_entity_id: sensor.286_mixertwocircuitflowtemperaturesensor
       device:
         name: "Open3e_Vitocal250A"
         identifiers: !secret vitocal_sn
@@ -950,7 +950,7 @@ mqtt:
     - name: "Vitocal HK2 Komfort-Temperatur"
       state_topic: "open3e/680_426_MixerTwoCircuitRoomTemperatureSetpoint/Comfort"
       unique_id: 680_426_MixerTwoCircuitRoomTemperatureSetpoint_Comfort
-      object_id: 426_mixermwocircuitroomtemperaturesetpoint_comfort
+      default_entity_id: sensor.426_mixermwocircuitroomtemperaturesetpoint_comfort
       device:
         name: "Open3e_Vitocal250A"
         identifiers: !secret vitocal_sn
@@ -964,7 +964,7 @@ mqtt:
     - name: "Vitocal HK2 Normal-Temperatur"
       state_topic: "open3e/680_426_MixerTwoCircuitRoomTemperatureSetpoint/Standard"
       unique_id: 680_426_MixerTwoCircuitRoomTemperatureSetpoint_Standard
-      object_id: 426_mixermwocircuitroomtemperaturesetpoint_standard
+      default_entity_id: sensor.426_mixermwocircuitroomtemperaturesetpoint_standard
       device:
         name: "Open3e_Vitocal250A"
         identifiers: !secret vitocal_sn
@@ -978,7 +978,7 @@ mqtt:
     - name: "Vitocal HK2 Reduziert-Temperatur"
       state_topic: "open3e/680_426_MixerTwoCircuitRoomTemperatureSetpoint/Reduced"
       unique_id: 680_426_MixerTwoCircuitRoomTemperatureSetpoint_Reduced
-      object_id: 426_mixermwocircuitroomtemperaturesetpoint_reduced
+      default_entity_id: sensor.426_mixermwocircuitroomtemperaturesetpoint_reduced
       device:
         name: "Open3e_Vitocal250A"
         identifiers: !secret vitocal_sn
@@ -992,7 +992,7 @@ mqtt:
     - name: "Vitocal HK2 Position Mischventil"
       state_topic: "open3e/680_476_MixerTwoCircuitThreeWayValvePositionPercent"
       unique_id: 680_476_MixerTwoCircuitThreeWayValvePositionPercent
-      object_id: 476_mixertwocircuitthreewayvalvepositionpercent
+      default_entity_id: sensor.476_mixertwocircuitthreewayvalvepositionpercent
       device:
         name: "Open3e_Vitocal250A"
         identifiers: !secret vitocal_sn
@@ -1005,7 +1005,7 @@ mqtt:
     - name: "Vitocal HK2 Vorlauftemperatur Sollwert"
       state_topic: "open3e/680_988_MixerTwoCircuitFlowTemperatureTargetSetpoint"
       unique_id: 680_988_MixerTwoCircuitFlowTemperatureTargetSetpoint
-      object_id: 988_mixertwocircuitflowtemperaturetargetsetpoint
+      default_entity_id: sensor.988_mixertwocircuitflowtemperaturetargetsetpoint
       device:
         name: "Open3e_Vitocal250A"
         identifiers: !secret vitocal_sn
@@ -1019,7 +1019,7 @@ mqtt:
     - name: "Vitocal HK2 Pumpe Minimalbegrenzung"
       state_topic: "open3e/680_1103_MixerTwoCircuitPumpMinimumMaximumLimit/MinSpeed"
       unique_id: 680_1103_MixerTwoCircuitPumpMinimumMaximumLimit_MinSpeed
-      object_id: 1103_mixertwocircuitpumpminimummaximumlimitminspeed
+      default_entity_id: sensor.1103_mixertwocircuitpumpminimummaximumlimitminspeed
       device:
         name: "Open3e_Vitocal250A"
         identifiers: !secret vitocal_sn
@@ -1032,7 +1032,7 @@ mqtt:
     - name: "Vitocal HK2 Pumpe Maximalbegrenzung"
       state_topic: "open3e/680_1103_MixerTwoCircuitPumpMinimumMaximumLimit/MaxSpeed"
       unique_id: 680_1103_MixerTwoCircuitPumpMinimumMaximumLimit_MaxSpeed
-      object_id: 1103_mixertwocircuitpumpminimummaximumlimitmaxspeed
+      default_entity_id: sensor.1103_mixertwocircuitpumpminimummaximumlimitmaxspeed
       device:
         name: "Open3e_Vitocal250A"
         identifiers: !secret vitocal_sn
@@ -1045,7 +1045,7 @@ mqtt:
     - name: "Vitocal HK2 Pumpe Standardwert"
       state_topic: "open3e/680_1103_MixerTwoCircuitPumpMinimumMaximumLimit/Setpoint"
       unique_id: 680_1103_MixerTwoCircuitPumpMinimumMaximumLimit_Setpoint
-      object_id: 1103_mixertwocircuitpumpminimummaximumlimitsetpoint
+      default_entity_id: sensor.1103_mixertwocircuitpumpminimummaximumlimitsetpoint
       device:
         name: "Open3e_Vitocal250A"
         identifiers: !secret vitocal_sn
@@ -1058,7 +1058,7 @@ mqtt:
     - name: "Vitocal HK2 Temperatur Minimum"
       state_topic: "open3e/680_1193_MixerTwoCircuitFlowTemperatureMinimumMaximumLimit/Minimum"
       unique_id: 680_1193_MixerTwoCircuitFlowTemperature_Minimum
-      object_id: 1193_mixertwocircuitflowtemperature_minimum
+      default_entity_id: sensor.1193_mixertwocircuitflowtemperature_minimum
       device:
         name: "Open3e_Vitocal250A"
         identifiers: !secret vitocal_sn
@@ -1071,7 +1071,7 @@ mqtt:
     - name: "Vitocal HK2 Temperatur Maximum"
       state_topic: "open3e/680_1193_MixerTwoCircuitFlowTemperatureMinimumMaximumLimit/Maximum"
       unique_id: 680_1193_MixerTwoCircuitFlowTemperature_Maximum
-      object_id: 1193_mixertwocircuitflowtemperature_maximum
+      default_entity_id: sensor.1193_mixertwocircuitflowtemperature_maximum
       device:
         name: "Open3e_Vitocal250A"
         identifiers: !secret vitocal_sn
@@ -1084,7 +1084,7 @@ mqtt:
     - name: "Vitocal HK2 Pumpe Status"
       state_topic: "open3e/680_2793_MixerTwoCircuitPumpStatus"
       unique_id: 680_2793_MixerTwoCircuitPumpStatus
-      object_id: 2793_mixertwocircuitpumpstatus
+      default_entity_id: sensor.2793_mixertwocircuitpumpstatus
       device:
         name: "Open3e_Vitocal250A"
         identifiers: !secret vitocal_sn
@@ -1097,7 +1097,7 @@ mqtt:
     - name: "Vitocal HK2 Betriebsprogramm"
       state_topic: "open3e/680_1416_MixerTwoCircuitOperationState/State/ID"
       unique_id: 680_1416_MixerTwoCircuitOperationState
-      object_id: 1416_mixertwocircuitoperationstate
+      default_entity_id: sensor.1416_mixertwocircuitoperationstate
       device:
         name: "Open3e_Vitocal250A"
         identifiers: !secret vitocal_sn
@@ -1131,7 +1131,7 @@ mqtt:
     - name: "Vitocal HK2 Raumtemperatur Sollwert"
       state_topic: "open3e/680_1644_MixerTwoCircuitCurrentTemperatureSetpoint"
       unique_id: 680_1644_MixerTwoCircuitCurrentTemperatureSetpoint
-      object_id: 1644_mixertwocircuitcurrenttemperaturesetpoint
+      default_entity_id: sensor.1644_mixertwocircuitcurrenttemperaturesetpoint
       device:
         name: "Open3e_Vitocal250A"
         identifiers: !secret vitocal_sn
@@ -1146,7 +1146,7 @@ mqtt:
     - name: "Vitocal Kompressor Einlauf Temperatur"
       state_topic: "open3e/680_321_CompressorInletTemperatureSensor/Actual"
       unique_id: 680_321_CompressorInletTemperatureSensor
-      object_id: 321_compressorinlettemperaturesensor
+      default_entity_id: sensor.321_compressorinlettemperaturesensor
       device:
         name: "Open3e_Vitocal250A"
         identifiers: !secret vitocal_sn
@@ -1160,7 +1160,7 @@ mqtt:
     - name: "Vitocal Kompressor Einlauf Druck"
       state_topic: "open3e/680_322_CompressorInletPressureSensor/Actual"
       unique_id: 680_322_CompressorInletPressureSensor
-      object_id: 322_compressorinletpressuresensor
+      default_entity_id: sensor.322_compressorinletpressuresensor
       device:
         name: "Open3e_Vitocal250A"
         identifiers: !secret vitocal_sn
@@ -1174,7 +1174,7 @@ mqtt:
     - name: "Vitocal Kompressor Auslauf Temperatur"
       state_topic: "open3e/680_324_CompressorOutletTemperatureSensor/Actual"
       unique_id: 680_324_CompressorOutletTemperatureSensor
-      object_id: 324_compressoroutlettemperaturesensor
+      default_entity_id: sensor.324_compressoroutlettemperaturesensor
       device:
         name: "Open3e_Vitocal250A"
         identifiers: !secret vitocal_sn
@@ -1188,7 +1188,7 @@ mqtt:
     - name: "Vitocal Kompressor Auslauf Druck"
       state_topic: "open3e/680_325_CompressorOutletPressureSensor/Actual"
       unique_id: 680_325_CompressorOutletPressureSensor
-      object_id: 325_compressoroutletpressuresensor
+      default_entity_id: sensor.325_compressoroutletpressuresensor
       device:
         name: "Open3e_Vitocal250A"
         identifiers: !secret vitocal_sn
@@ -1202,7 +1202,7 @@ mqtt:
     - name: "Vitocal Kompressor Öl Temperatur"
       state_topic: "open3e/680_1772_CompressorOilTemperatureSensor/Actual"
       unique_id: 680_1772_CompressorOilTemperatureSensor
-      object_id: 1772_compressoroiltemperaturesensor
+      default_entity_id: sensor.1772_compressoroiltemperaturesensor
       device:
         name: "Open3e_Vitocal250A"
         identifiers: !secret vitocal_sn
@@ -1216,7 +1216,7 @@ mqtt:
     - name: "Vitocal Kompressor Drehzahl Prozent"
       state_topic: "open3e/680_2346_CompressorSpeedPercent"
       unique_id: 680_2346_CompressorSpeedPercent
-      object_id: 2346_compressorspeedpercent
+      default_entity_id: sensor.2346_compressorspeedpercent
       device:
         name: "Open3e_Vitocal250A"
         identifiers: !secret vitocal_sn
@@ -1231,7 +1231,7 @@ mqtt:
       state_topic: "open3e/680_2369_HeatPumpCompressorStatistical/starts"
       state_class: total_increasing
       unique_id: 680_2369_HeatPumpCompressorStatistical_starts
-      object_id: 2369_heatpumpcompressorstatistical_starts
+      default_entity_id: sensor.2369_heatpumpcompressorstatistical_starts
       device:
         name: "Open3e_Vitocal250A"
         identifiers: !secret vitocal_sn
@@ -1243,7 +1243,7 @@ mqtt:
       state_topic: "open3e/680_2369_HeatPumpCompressorStatistical/hours"
       state_class: total_increasing
       unique_id: 680_2369_HeatPumpCompressorStatistical_hours
-      object_id: 2369_heatpumpcompressorstatistical_hours
+      default_entity_id: sensor.2369_heatpumpcompressorstatistical_hours
       device:
         name: "Open3e_Vitocal250A"
         identifiers: !secret vitocal_sn
@@ -1254,7 +1254,7 @@ mqtt:
     - name: "Vitocal Kompressor Drehzahl"
       state_topic: "open3e/680_2569_CompressorSpeedRps"
       unique_id: 680_2569_CompressorSpeedRps
-      object_id: 2569_compressorspeedrps
+      default_entity_id: sensor.2569_compressorspeedrps
       device:
         name: "Open3e_Vitocal250A"
         identifiers: !secret vitocal_sn
@@ -1269,7 +1269,7 @@ mqtt:
       state_topic: "open3e/680_2370_AdditionalElectricHeaterStatistical/starts"
       state_class: total_increasing
       unique_id: 680_2370_AdditionalElectricHeaterStatistical_starts
-      object_id: 2370_additionalelectricheaterstatistical_starts
+      default_entity_id: sensor.2370_additionalelectricheaterstatistical_starts
       device:
         name: "Open3e_Vitocal250A"
         identifiers: !secret vitocal_sn
@@ -1281,7 +1281,7 @@ mqtt:
       state_topic: "open3e/680_2370_AdditionalElectricHeaterStatistical/hours"
       state_class: total_increasing
       unique_id: 680_2370_AdditionalElectricHeaterStatistical_hours
-      object_id: 2370_additionalelectricheaterstatistical_hours
+      default_entity_id: sensor.2370_additionalelectricheaterstatistical_hours
       device:
         name: "Open3e_Vitocal250A"
         identifiers: !secret vitocal_sn
@@ -1292,7 +1292,7 @@ mqtt:
     - name: "Vitocal Leistungsaufnahme Zusatzheizung"
       state_topic: "open3e/680_2487_CurrentElectricalPowerConsumptionElectricHeater"
       unique_id: 680_2487_CurrentElectricalPowerConsumptionElectricHeater
-      object_id: 2487_currentelectricalpowerconsumptionelectricheater
+      default_entity_id: sensor.2487_currentelectricalpowerconsumptionelectricheater
       device:
         name: "Open3e_Vitocal250A"
         identifiers: !secret vitocal_sn
